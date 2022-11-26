@@ -1,0 +1,125 @@
+/* .header {
+    position: fixed;
+    background-color: purple;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    display: block;
+} */
+
+.content {
+    margin-top: 50px;
+}
+
+.forYou {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+
+    overflow-x: visible;
+    overflow-y: scroll;
+    background: green;
+    /* justify-content: center; */
+}
+
+.forYou div {
+    flex-shrink: 0;
+    background: blue;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 10px;
+
+    font-weight: 1000;
+    text-align: center;
+    font-family: "Lucida Console";
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+} /* this targets the default scrollbar (compulsory) */
+
+::-webkit-scrollbar-track {
+    background-color: white;
+} /* the new scrollbar will have a flat appearance with the set background color */
+
+::-webkit-scrollbar-thumb {
+    background-color: black; 
+} this will style the thumb, ignoring the track
+
+::-webkit-scrollbar-button {
+    background-color: #7c2929;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+/* ::-webkit-scrollbar-corner {
+    background-color: black;
+} if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+
+.flexcontainer {
+    /* margin-top: -20px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: green;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexcontainer div {
+    background: blue;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 10px;
+
+    font-weight: 1000;
+    text-align: center;
+    font-family: "Lucida Console";
+}
+
+.space {
+    height: 100vh;
+    background: gray;
+}
+
+.header {
+    background-color: rgb(61, 43, 226);
+    position: fixed;
+    width: 100vw;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+  
+.header a {
+    float: left;
+    color: white;
+    padding: 10px 12px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+.header a:hover {
+    background-color: white;
+    color: blue;
+}
+
+.footer {
+    position: fixed;
+    background-color: rgb(61, 43, 226);
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    display: block;
+}
+
+
