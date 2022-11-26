@@ -122,4 +122,11 @@
     display: block;
 }
 
+#Home {
+    justify-content: left;
+}
+
+#Settings {
+    background-color: green;
+}
 
